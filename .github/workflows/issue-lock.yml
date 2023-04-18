@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: dessant/repo-lockdown@v3
         with:
+          close-issue: false
           exclude-issue-labels: "status: ready for dev"
           process-only: "issues"
           skip-closed-issue-comment: true
